@@ -42,8 +42,13 @@ const CheckoutButton = ({ label }: { label: string }) => {
         alert(result.error.message);
       }
     } catch (error) {
-      console.error("Error:", error);
-      alert(error.message);
+      if (error instanceof Error) {
+        console.error("Error:", error);
+        alert(error.message);
+      } else {
+        console.error("Unexpected error:", error);
+        alert("An unexpected error occurred");
+      }
     } finally {
       setLoading(false);
     }
