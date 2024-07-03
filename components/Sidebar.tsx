@@ -22,7 +22,7 @@ function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <div className="w-1/4 bg-gray-800 p-4 text-gray-100">
+    <div className=" hidden sm:block md:block w-1/4 bg-gray-800 p-4 text-gray-100">
       <h1>Sidebar</h1>
       {links.map((link) => {
         const isActive = pathname === link.href;
