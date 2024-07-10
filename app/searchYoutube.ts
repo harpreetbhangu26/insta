@@ -7,6 +7,7 @@ interface Video {
   snippet: {
     title: string;
     description: string;
+    publishedAt: string;
     thumbnails: {
       default: {
         url: string;
@@ -31,7 +32,10 @@ export const searchYoutube = async (query: string): Promise<Video[]> => {
     }
     const data = await res.json();
 
-    return data.items;
+    return data.items.map((item: any) => ({
+      id: item.id,
+      snippet: item.snippet,
+    }));
   } catch (err) {
     console.error(err);
     return [];
