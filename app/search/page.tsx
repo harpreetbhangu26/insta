@@ -1,5 +1,7 @@
 "use client";
 
+import SkeletonSearch from "@/components/SkeletonSearch";
+
 import React, { useState, FormEvent } from "react";
 import { searchYoutube } from "../searchYoutube";
 import { Plus } from "lucide-react";
@@ -25,7 +27,6 @@ interface Video {
     };
   };
 }
-
 const SearchPage = () => {
   const [query, setQuery] = useState<string>(() => {
     return localStorage.getItem("query") || "";
@@ -44,7 +45,7 @@ const SearchPage = () => {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!query) return;
+
     const videosData = await searchYoutube(query);
     setVideos(videosData);
     localStorage.setItem("videos", JSON.stringify(videosData));
@@ -62,11 +63,11 @@ const SearchPage = () => {
         />
         {query && (
           <Plus
-            className="rotate-45 text-gray-500 cursor-pointer"
-            style={{ transform: "translate(-40px, 8px)" }}
+            className="  rotate-45 text-gray-500 translate-x-[-40px] translate-y-[8px]"
             onClick={handleClear}
           />
         )}
+
         <button
           className="bg-blue-500 text-white p-3 rounded-md ml-3"
           type="submit"
@@ -79,14 +80,14 @@ const SearchPage = () => {
         {videos.map((video) => (
           <div key={video.id.videoId}>
             <h1>
-              {video.snippet.title} || {video.snippet.description}
+              {video.snippet.description} || {video.snippet.description}
             </h1>
             <iframe
               className="w-full h-52"
               src={`https://www.youtube.com/embed/${video.id.videoId}`}
               allowFullScreen
             />
-            <p>{new Date(video.snippet.publishedAt).toLocaleDateString()}</p>
+            {video.snippet.publishedAt}
           </div>
         ))}
       </div>

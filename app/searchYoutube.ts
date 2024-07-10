@@ -32,10 +32,7 @@ export const searchYoutube = async (query: string): Promise<Video[]> => {
     }
     const data = await res.json();
 
-    return data.items.map((item: any) => ({
-      id: item.id,
-      snippet: item.snippet,
-    }));
+    return data.items;
   } catch (err) {
     console.error(err);
     return [];
