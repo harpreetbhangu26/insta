@@ -13,6 +13,81 @@ function Parts() {
         answer=" Kimeo o tuc??"
         voice="/how.mp3"
       />
+      <AudioText
+        question="what you doing now?"
+        answer=" ki krde o??"
+        voice="/how.mp3"
+      />
+      <AudioText
+        question="How are you?"
+        answer=" Kimeo o tuc??"
+        voice="/how.mp3"
+      />
+      <AudioText
+        question="How are you?"
+        answer=" Kimeo o tuc??"
+        voice="/how.mp3"
+      />
+      <AudioText
+        question="How are you?"
+        answer=" Kimeo o tuc??"
+        voice="/how.mp3"
+      />
+      <AudioText
+        question="How are you?"
+        answer=" Kimeo o tuc??"
+        voice="/how.mp3"
+      />
+      <AudioText
+        question="How are you?"
+        answer=" Kimeo o tuc??"
+        voice="/how.mp3"
+      />
+      <AudioText
+        question="How are you?"
+        answer=" Kimeo o tuc??"
+        voice="/how.mp3"
+      />
+      <AudioText
+        question="How are you?"
+        answer=" Kimeo o tuc??"
+        voice="/how.mp3"
+      />
+      <AudioText
+        question="How are you?"
+        answer=" Kimeo o tuc??"
+        voice="/how.mp3"
+      />
+      <AudioText
+        question="How are you?"
+        answer=" Kimeo o tuc??"
+        voice="/how.mp3"
+      />
+      <AudioText
+        question="How are you?"
+        answer=" Kimeo o tuc??"
+        voice="/how.mp3"
+      />
+      <AudioText
+        question="How are you?"
+        answer=" Kimeo o tuc??"
+        voice="/how.mp3"
+      />
+      <AudioText
+        question="How are you?"
+        answer=" Kimeo o tuc??"
+        voice="/how.mp3"
+      />
+      <AudioText
+        question="How are you?"
+        answer=" Kimeo o tuc??"
+        voice="/how.mp3"
+      />
+      <AudioText
+        question="How are you?"
+        answer=" Kimeo o tuc??"
+        voice="/how.mp3"
+      />
     </div>
   );
 }
