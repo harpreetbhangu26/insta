@@ -71,8 +71,7 @@ const SearchPage = () => {
         />
         {query && (
           <Plus
-            className="rotate-45 text-gray-500 cursor-pointer"
-            style={{ transform: "translate(-40px, 8px)" }}
+            className="flex rotate-45 text-3xl text-gray-500 cursor-pointer translate-x-[-38px] translate-y-[10px]"
             onClick={handleClear}
           />
         )}
