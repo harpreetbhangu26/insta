@@ -61,7 +61,7 @@ const SearchPage = () => {
   };
 
   return (
-    <div className="flex flex-col w-full p-8 ">
+    <div className="flex flex-col w-full p-8 mt-3">
       <form className="flex flex-row mb-5" onSubmit={handleSubmit}>
         <input
           className="border rounded-xl placeholder:p-2 p-3"
@@ -87,9 +87,7 @@ const SearchPage = () => {
       <div className="grid grid-cols-1 gap-8">
         {videos.map((video) => (
           <div key={video.id.videoId}>
-            <h1>
-              {video.snippet.title} || {video.snippet.description}
-            </h1>
+            <h1 className="font-bold mb-3">{video.snippet.title} </h1>
             <iframe
               className="w-full h-52"
               src={`https://www.youtube.com/embed/${video.id.videoId}`}
