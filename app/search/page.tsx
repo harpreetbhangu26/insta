@@ -62,7 +62,7 @@ const SearchPage = () => {
 
   return (
     <div className="flex flex-col w-full p-8 mt-3">
-      <form className="flex flex-row mb-5" onSubmit={handleSubmit}>
+      <form className="flex flex-row mb-5 " onSubmit={handleSubmit}>
         <input
           className="border rounded-xl placeholder:p-2 p-3"
           value={query}
@@ -71,7 +71,7 @@ const SearchPage = () => {
         />
         {query && (
           <Plus
-            className="flex rotate-45 text-3xl text-gray-500 cursor-pointer translate-x-[-38px] translate-y-[10px]"
+            className="flex rotate-45  text-gray-500 cursor-pointer translate-x-[-38px] translate-y-[10px]"
             onClick={handleClear}
           />
         )}

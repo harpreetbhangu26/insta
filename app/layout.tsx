@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} h-screen `}>
         <div className="flex flex-col h-full">
-          <div className=" ">
+          <div className=" sticky">
             <Navbar />
           </div>
 
