@@ -1,4 +1,4 @@
-import Parts from "@/components/Parts";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,7 +21,9 @@ export default function Home() {
           />
         </Link>
       </div>
-
+      <Head>
+        <meta name="google-adsense-account" content="ca-pub-1905574218549333" />
+      </Head>
       <div>
         <h1>This website is created by your Hero No One</h1>
         <Image
