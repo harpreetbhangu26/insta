@@ -1,4 +1,3 @@
-import Adver from "@/components/Advert";
 import Parts from "@/components/Parts";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,7 +21,7 @@ export default function Home() {
           />
         </Link>
       </div>
-      <Adver />
+
       <div>
         <h1>This website is created by your Hero No One</h1>
         <Image
