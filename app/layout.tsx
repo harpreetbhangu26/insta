@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta
           name="google-adsense-account"
           content="ca-pub-1905574218549333"
@@ -30,16 +30,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1905574218549333"
           crossOrigin="anonymous"
         ></script>
-        <ins
-          className="adsbygoogle"
-          style={{ display: "block" }}
-          data-ad-client="ca-pub-1905574218549333"
-          data-ad-slot="3562012777"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        ></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      </Head>
+      </head>
       <body className={`${inter.className} h-screen `}>
         <div className="flex flex-col h-full">
           <div className=" sticky">

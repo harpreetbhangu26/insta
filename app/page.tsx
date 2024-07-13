@@ -21,9 +21,9 @@ export default function Home() {
           />
         </Link>
       </div>
-      <Head>
+      <head>
         <meta name="google-adsense-account" content="ca-pub-1905574218549333" />
-      </Head>
+      </head>
       <div>
         <h1>This website is created by your Hero No One</h1>
         <Image
